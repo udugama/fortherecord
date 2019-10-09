@@ -29,6 +29,8 @@ Answer:
 * reorganise the code and refactor to improve the code quality. and more type checking and declare types.
 * use webpack bundler to minimize or if not preferable in order to perform `treeshaking`.
 * code compiled to /build folder and compilation can be done using ```yarn compile``` and run the compiled code with `yarn start`.
+* make sure the host computer has node version `v10.15.0` installed.
+* install `yarn` by npm instaling `npm -g install yarn`.
 
 3. What did you think about this coding test - is there anything you’d suggest in order to improve it?
 
@@ -58,10 +60,6 @@ Dev runtime execute typescript application using 'ts-node' and there may be perf
 
 ## Running the Application (production environment)
 
-todo: It is important to use module bundler tool like `webpack` to perform `treeshaking` on dependancies. It may help to reduce the application size and may improve performance.
-
-note: this application uses only one non production dependency.
-
 run fowllowing command to run excecute the application on dev environment.
 
 * compile the typescript program.
@@ -69,6 +67,10 @@ run fowllowing command to run excecute the application on dev environment.
 
 ```yarn compile```
 ```yarn start```
+
+todo: It is important to use module bundler tool like `webpack` to perform `treeshaking` on dependancies. It may help to reduce the application size and may improve performance.
+
+note: this application uses only one non production dependency.
 
 ## Run Tests / Test Coverage
 
