@@ -18,11 +18,25 @@ The application should accepts an ongoing series of user supplied numbers as inp
 1. You have a new requirement to implement for your application: its logic should stay exactly the same but it will need to have a different user interface (e.g. if you wrote a web app, a different UI may be a REPL).
 Please describe how you would go about implementing this new UI in your application? Would you need to restructure your solution in any way?
 
-Answer: I believe 
+Answer: I have mostly seperated and exported the functions may need exposure. If tha application needed to be consumed by the UI, it can easily trigger functionality and pass on inputs. Report function can be also utilize directly and `doFunctionality()` function can be called by the UI directly by passing input to trigger predefined set of actions like `halt`,`quit` and `resume`. Further some other action functions can be directly accessible from outside if requred. `Read()` function may not be requred and UI input will be able to provide input to the application.
 
 2. You now need to make your application “production ready”, and deploy it so that it can be used by customers.
 Please describe the steps you’d need to take for this to happen.
+
+Answer:
+
+* add more tests and increase the test coverage over 90%
+* reorganise the code and refactor to improve the code quality. and more type checking and declare types.
+* use webpack bundler to minimize or if not preferable in order to perform `treeshaking`.
+* code compiled to /build folder and compilation can be done using ```yarn compile``` and run the compiled code with `yarn start`.
+
 3. What did you think about this coding test - is there anything you’d suggest in order to improve it?
+
+Answer:
+
+* well designed coding test and covers many important aspects.
+* Also evalueate the modularise development.
+* may be able to evalueate knowladge on some js concepts like `currying`, `generators` and `streams`.
 
 ## Application Setup
 
@@ -51,7 +65,7 @@ note: this application uses only one non production dependency.
 run fowllowing command to run excecute the application on dev environment.
 
 * compile the typescript program.
-* run the compile code.
+* run the compiled code.
 
 ```yarn compile```
 ```yarn start```
@@ -60,7 +74,7 @@ run fowllowing command to run excecute the application on dev environment.
 
 Tests are written in typescript and it uses ts-jest as a preprocessor of typescipt.
 
-The test suite configure to run coverage report, Code coverage is currently very low and in production enviromnment expect to be over 90% code coverage overall (currently the coiverage limit set to 50% please refer to `jest.config.js`).
+The test suite configure to run coverage report, Code coverage is currently very low and in production enviromnment expect to be over 90% code coverage overall (currently the coiverage limit set to 40% please refer to `jest.config.js`).
 
 Run the following command to run the test suite using jest:
 
