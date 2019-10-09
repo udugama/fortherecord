@@ -1,7 +1,7 @@
 {
   "name": "prasad-test-for-the-record",
   "version": "0.1.0",
-  "description": "prasad's for the record coding challange",
+  "description": "prasad's for the record coding challenge",
   "main": "index.ts",
   "engines": {
     "node": "^10.15.0"
