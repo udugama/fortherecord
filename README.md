@@ -2,7 +2,7 @@
 
 # Part 1
 
-The application should accepts an ongoing series of user supplied numbers as inputs, and output notifications when certain conditions are met. It will operate as follows:
+The application should accept an ongoing series of user supplied numbers as inputs, and output notifications when certain conditions are met. It will operate as follows:
 
 1. On startup, the program will prompt the user for the number of seconds (X) between outputting the frequency of each number to the screen.
 2. Every X seconds the program will display, in frequency descending order, the list of numbers and their frequency.
@@ -18,7 +18,7 @@ The application should accepts an ongoing series of user supplied numbers as inp
 1. You have a new requirement to implement for your application: its logic should stay exactly the same but it will need to have a different user interface (e.g. if you wrote a web app, a different UI may be a REPL).
 Please describe how you would go about implementing this new UI in your application? Would you need to restructure your solution in any way?
 
-Answer: I have segregated and exported the functions based on the function type may need exposure. If tha application needed to be consumed by the UI, it can easily trigger functionality and pass on inputs. Report function can be also utilize directly and `doFunctionality()` function can be called by the UI directly by passing input to trigger predefined set of actions like `halt`,`quit` and `resume`. Further some other action functions can be directly accessible from outside if requred. `Read()` function may not be requred and UI input will be able to provide input to the application.
+Answer: I have segregated and exported the functions may need exposure. If tha application needed to be consumed by the UI, it can easily trigger functionality and pass on inputs. Report function can be also utilize directly and `doFunctionality()` function can be called by the UI directly by passing input to trigger predefined set of actions like `halt`,`quit` and `resume`. Further some other action functions can be directly accessible from outside if requred. `Read()` function may not be requred and UI input will be able to provide input to the application.
 
 2. You now need to make your application “production ready”, and deploy it so that it can be used by customers.
 Please describe the steps you’d need to take for this to happen.
