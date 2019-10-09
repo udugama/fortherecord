@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "outDir": "./build",
+    "rootDir": ".",
+    "noImplicitAny": false,
+    "strict": true,
+    "strictNullChecks": false,
+    "skipLibCheck": true,
+    "lib": [ "es2015" ],
+    "sourceMap": true
+  },
+  "include": [ "src/typings.d.ts", "src" ],
+  "exclude": [ "src/**/*__tests__" ]
+}

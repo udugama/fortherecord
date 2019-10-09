@@ -1,0 +1,15 @@
+{
+  "defaultSeverity": "error",
+  "rules": {
+    "quotemark": [
+      true,
+      "single"
+    ],
+    "no-implicit-dependencies": [true, "dev"],
+    "no-console": false,
+    "no-var-requires": false,
+    "object-literal-sort-keys": false,
+    "space-before-function-paren": false
+  },
+  "rulesDirectory": []
+}

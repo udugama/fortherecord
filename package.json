@@ -1,0 +1,38 @@
+{
+  "name": "prasad-test-for-the-record",
+  "version": "0.1.0",
+  "description": "prasad's for the record coding challange",
+  "main": "index.ts",
+  "engines": {
+    "node": "^10.15.0"
+  },
+  "scripts": {
+    "compile": "rm -rf build && yarn tsc",
+    "build": "yarn lint && yarn compile && yarn test 2>&1",
+    "lint": "tslint 'src/**/*.ts' --project tsconfig.json",
+    "test": "yarn jest --config jest.config.js",
+    "start": "node build/src/index.js",
+    "dev": "yarn ts-node src/index.ts"
+  },
+  "keywords": [
+    "fortherecord",
+    "prasad",
+    "test",
+    "console"
+  ],
+  "author": "prasad.udugama <udugama@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "private": true,
+  "dependencies": {
+    "lodash.orderby": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/jest": "~24.0.18",
+    "@types/node": "^12.7.4",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "ts-node": "~8.3.0",
+    "tslint": "^5.11.0",
+    "typescript": "~3.6.2"
+  }
+}
